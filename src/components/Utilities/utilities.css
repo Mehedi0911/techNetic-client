@@ -1,13 +1,12 @@
 /* colors */
 :root{
-    --primary:#FFA96B;
-    --secondary:#2e2e2e;
-    --ternary:#6C6C6C;
+    --primary:#F9BC02;
+    --secondary:#25387C;
+    --dark:#2e2e2e;
     --danger: #FE4545;
     --pure: #FEFEFE;
     --light: #F0F0F0;
-    --heaven:#FFFFFF;
-    --footer:#2D333F;
+
 }
 
 .bg-brand-dark{
