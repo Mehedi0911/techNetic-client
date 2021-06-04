@@ -1,16 +1,17 @@
+@import '../../../Utilities/utilities.css';
+
 .topBar{
 border-bottom: 1px solid lightgray;
 }
 .dropbtn {
   
-    color: #dcdcdc;
-  
+    color: var(--light);
     font-size: 16px;
     border: none;
   }
 
   .dropdown:hover{
-      color: lightcoral;
+      color: var(--primary);
       cursor: pointer;
   }
   
@@ -23,33 +24,33 @@ border-bottom: 1px solid lightgray;
       margin-top:6px;
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--light);
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
+    color: var(--dark);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   .signIn-btn:hover{
-      color: rgb(232, 232, 232);
+      color: var(--light);
       cursor: pointer;
   }
 
   .signIn-btn{
-    color: lightcoral;
+    color: var(--primary);
     cursor: pointer;
 }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: var(--pure);}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {color: lightcoral;}
+  .dropdown:hover .dropbtn {color: var(--primary);}
 
   .imp-links{
       width: 300px;

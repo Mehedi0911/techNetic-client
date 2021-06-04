@@ -12,3 +12,19 @@
 .bg-brand-dark{
     background-color: var(--secondary);
 }
+
+.brand-text-parimary{
+    color: var(--primary);
+}
+
+.brand-text-secondary{
+    color: var(--secondary);
+}
+
+.brand-text-dark{
+    color: var(--dark);
+}
+
+.brand-text-light{
+    color: var(--light);
+}

@@ -9,7 +9,7 @@ const TopBar = () => {
             <div className="container d-flex justify-content-between topBar">
 
                 <div>
-                    <p className="mb-0 p-1"> <FontAwesomeIcon icon={faPhone} /> 000-0000-000</p>
+                    <p className="mb-0 p-1 brand-text-light"> <FontAwesomeIcon icon={faPhone} /> 000-0000-000</p>
                 </div>
                 <div className="d-flex justify-content-between imp-links">
                     <div>
