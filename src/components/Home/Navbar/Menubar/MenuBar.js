@@ -1,55 +1,55 @@
 import React from 'react';
-import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faAngleDown, faBars, faTags } from '@fortawesome/free-solid-svg-icons'
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import burgerMenu from '../../../../Images/Icons/bargerMenu.svg'
+import './MenuBar.css'
 const MenuBar = () => {
     return (
-        <div className="bg-light">
-            <div className="container">
-                <Navbar expand="lg">
+        <Navbar expand="lg" className="shadow-sm">
+            <Container className="d-flex">
+                <div style={{ width: '500px' }}>
+                
+                <Navbar.Toggle aria-controls="basic-navbar-nav"><img style={{ height: '30px' }} src={burgerMenu} alt="" /></Navbar.Toggle>
+                    
+                    
+                        <Navbar.Collapse id="basic-navbar-nav" className="">
 
+                            <Nav className="">
+                                <div className="dropdown">
+                                    <p className="mt-2 brand-text-primary">
+                                        <FontAwesomeIcon style={{marginRight:'10px'}} icon={faBars} />
+                                        Browse Categories
+                                        <FontAwesomeIcon style={{marginLeft:'7px'}} icon={faAngleDown} />
+                                    </p>
+                                    <div className="dropdown-content">
+                                        <a href="#">Cameras</a>
+                                        <a href="#">Laptops</a>
+                                        <a href="#">Mobiles</a>
+                                        <a href="#">Accessories</a>
+                                        <a href="#">Watches</a>
+                                        <a href="#">Others</a>
+                                    </div>
+                                </div>
+                                <p style={{marginRight:'13px', marginLeft:'30px', marginTop:'10px'}}>Home</p>
+                                <p style={{marginRight:'13px',marginTop:'10px'}}>Shop</p>
+                                <p style={{marginRight:'13px',marginTop:'10px'}}>Products</p>
+                                <p style={{marginRight:'13px',marginTop:'10px'}}>Blog</p>
 
-                    <div className="dropdown">
-                        <p className="mb-0 brand-text-primary">Browse Category <FontAwesomeIcon icon={faAngleDown} /></p>
-                        <div className="dropdown-content">
-                            <a href="#">USD</a>
-                            <a href="#">EUR</a>
+                            </Nav>
 
-                        </div>
+                        </Navbar.Collapse>
                     </div>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                
+                
+                    <p className="brand-text-primary mt-2"><FontAwesomeIcon style={{marginLeft:'7px'}} icon={faTags} /> Flat 50% Discount</p>
+                
+            </Container>
+        </Navbar>
+    )
 
 
-
-                   <div className="ml-5">
-                   <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Shop</Nav.Link>
-                            <Nav.Link href="#link">Blog</Nav.Link>
-                            <NavDropdown title="Products" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                        {/* <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form> */}
-
-                    </Navbar.Collapse>
-                   </div>
-
-
-
-
-                </Navbar>
-            </div>
-        </div>
-    );
 };
 
 export default MenuBar;
