@@ -1,7 +1,7 @@
 /* colors */
 :root{
     --primary:#F9BC02;
-    --secondary:#25387C;
+    --secondary:#333333;
     --dark:#2e2e2e;
     --danger: #FE4545;
     --pure: #FEFEFE;
@@ -27,4 +27,26 @@
 
 .brand-text-light{
     color: var(--light);
+}
+
+.brand-btn-regular-primary{
+    color: white;
+    background: var(--primary);
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+
+}
+.brand-btn-text-primary{
+    color: var(--primary);
+    background: none;
+    border: none;
+    border-radius: 20px;
+    transition: all ease .4s;
+    
+}
+.brand-btn-text-primary:hover{
+    color: white;
+    background: var(--primary);
+    padding: .2rem .5rem;
 }

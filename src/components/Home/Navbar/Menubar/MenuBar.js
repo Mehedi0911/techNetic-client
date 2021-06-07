@@ -11,14 +11,14 @@ const MenuBar = () => {
             <Container className="d-flex">
                 <div style={{ width: '500px' }}>
                 
-                <Navbar.Toggle aria-controls="basic-navbar-nav"><img style={{ height: '30px' }} src={burgerMenu} alt="" /></Navbar.Toggle>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"><img className="burger-menu" style={{ height: '30px' }} src={burgerMenu} alt="" /></Navbar.Toggle>
                     
                     
                         <Navbar.Collapse id="basic-navbar-nav" className="">
 
                             <Nav className="">
                                 <div className="dropdown">
-                                    <p className="mt-2 brand-text-primary">
+                                    <p className="mt-2 brand-text-primary ddown-menu">
                                         <FontAwesomeIcon style={{marginRight:'10px'}} icon={faBars} />
                                         Browse Categories
                                         <FontAwesomeIcon style={{marginLeft:'7px'}} icon={faAngleDown} />
@@ -32,18 +32,18 @@ const MenuBar = () => {
                                         <a href="#">Others</a>
                                     </div>
                                 </div>
-                                <p style={{marginRight:'13px', marginLeft:'30px', marginTop:'10px'}}>Home</p>
-                                <p style={{marginRight:'13px',marginTop:'10px'}}>Shop</p>
-                                <p style={{marginRight:'13px',marginTop:'10px'}}>Products</p>
-                                <p style={{marginRight:'13px',marginTop:'10px'}}>Blog</p>
+                                <p className="menu-links home">Home</p>
+                                <p className="menu-links">Shop</p>
+                                <p className="menu-links" >Products</p>
+                                <p className="menu-links" >Blog</p>
 
                             </Nav>
 
                         </Navbar.Collapse>
                     </div>
                 
-                
-                    <p className="brand-text-primary mt-2"><FontAwesomeIcon style={{marginLeft:'7px'}} icon={faTags} /> Flat 50% Discount</p>
+                    <input className="form-control w-25" type="text" placeholder="search products"/>
+                    
                 
             </Container>
         </Navbar>

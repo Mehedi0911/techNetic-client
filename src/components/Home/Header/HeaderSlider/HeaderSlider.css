@@ -1,0 +1,8 @@
+.carousel-content{
+    width: 400px;
+    position: absolute;
+    left: -30px;
+    top:-300px;
+    right: 600px;
+    text-align: left;
+}
