@@ -1,12 +1,16 @@
 .header-card{
-    height: 135.5px;
+    height: auto;
+    /* min-height: 135.5px; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: justify;
+    
 }
 
 .card-content{
     width: 250px;
+    
 }
 
 .card-content button{

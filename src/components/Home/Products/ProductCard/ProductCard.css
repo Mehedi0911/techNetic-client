@@ -1,0 +1,35 @@
+
+
+.product-card:hover .cart-btn-container{
+    visibility:visible;
+    animation-name: btnAnim;
+    animation-duration: 1s;
+}
+
+
+@keyframes btnAnim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+.cart-btn-container{
+background: var(--dark);
+visibility: hidden;
+
+}
+
+.cart-btn{
+    background-color:var(--dark);
+    border: none;
+    padding: .5rem .35rem;
+    color: var(--pure);
+   
+}
+
+.cart-btn:hover{
+    color: var(--primary);
+}
+
+
+

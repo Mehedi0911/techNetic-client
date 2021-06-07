@@ -31,9 +31,11 @@ const HeaderCards = () => {
     ]
     return (
         <div >
+            <div>
             {
                 headerCardsContent.map(content => <HeaderCard content={content}></HeaderCard>)
             }
+            </div>
         </div>
     );
 };

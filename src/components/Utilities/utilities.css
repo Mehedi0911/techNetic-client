@@ -37,6 +37,10 @@
     padding: .5rem 1rem;
 
 }
+
+.brand-btn-regular-primary:hover{
+background: #eeb301;
+}
 .brand-btn-text-primary{
     color: var(--primary);
     background: none;
