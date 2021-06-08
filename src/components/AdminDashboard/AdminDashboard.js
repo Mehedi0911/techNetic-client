@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './AdminDashboard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faWindowClose, faFolderPlus, faSortAmountUpAlt, faShippingFast, faWarehouse, faUserShield, faOutdent } from '@fortawesome/free-solid-svg-icons'
+import AddProduct from './AddProduct/AddProduct';
+
 const AdminDashboard = () => {
     const [isActive, setActive] = useState('products');
     const [isHidden, setHidden] = useState(false)
@@ -37,7 +39,11 @@ const AdminDashboard = () => {
                     <h5 className="text-white mt-1">Name</h5>
                 </div>
 
-
+                {
+                    isActive === "products" ? 
+                    <AddProduct></AddProduct>
+                    : ''
+                }
 
             </div>
         </div>
