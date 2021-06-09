@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './ProductForm.css';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons'
 
 const ProductForm = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -112,9 +113,9 @@ const ProductForm = () => {
                         </div>
 
 
-                        <div class="form-group p-3">
-                            <label for="image">Upload Image</label> <br />
-                            <input onChange={handleImageUpload} name="image" type="file" className="form-control-file mt-3" id="exampleFormControlFile1" />
+                        <div class="upload-btn-wrapper">
+                            <button className="upload-btn mb-3"><FontAwesomeIcon icon={faCloudUploadAlt} /> Upload Image</button>
+                            <input onChange={handleImageUpload} type="file" name="image" required/>
                         </div>
 
                     </div>
