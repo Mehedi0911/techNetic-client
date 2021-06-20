@@ -10,7 +10,7 @@ const Header = () => {
                     <div className="col-md-8">
                         <HeaderSlider></HeaderSlider>
                     </div>
-                    <div className="col-md-4 ">
+                    <div  className="col-md-4">
                         <HeaderCards></HeaderCards>
                     </div>
                 </div>

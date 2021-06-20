@@ -1,0 +1,11 @@
+.banner{
+    height: 150px;
+    background: linear-gradient(
+        rgba(35, 43, 56, 0.7),
+        rgba(35, 43, 56, 0.7)
+    ), url(../../../../Images/cartbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}

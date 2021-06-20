@@ -1,5 +1,4 @@
 
-
 .product-card:hover .cart-btn-container{
     visibility:visible;
     animation-name: btnAnim;
@@ -29,6 +28,14 @@ visibility: hidden;
 
 .cart-btn:hover{
     color: var(--primary);
+}
+
+.saleIcon{
+    z-index: 56;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    position: absolute;
+    height: 50px;
 }
 
 

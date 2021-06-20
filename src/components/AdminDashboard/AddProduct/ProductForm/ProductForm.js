@@ -103,12 +103,12 @@ const ProductForm = () => {
                         <div class="form-group p-3 w-25">
                             <label for="tags">Tags</label>
                             <select name="tags" className="form-control mt-3" {...register("tags")}>
-                                <option>Regular</option>
-                                <option>On Sale</option>
-                                <option>Featured</option>
-                                <option>Top Sellers</option>
-                                <option>Trending</option>
-                                <option>New Arrival</option>
+                                <option>regular</option>
+                                <option>onSale</option>
+                                <option>featured</option>
+                                <option>topSellers</option>
+                                <option>trending</option>
+                                <option>newArrival</option>
                             </select>
                         </div>
 

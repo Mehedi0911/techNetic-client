@@ -1,0 +1,29 @@
+.trending-banner{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 475px;
+    background:linear-gradient(
+        rgba(35, 43, 56, 0.5),
+        rgba(35, 43, 56, 0.5)
+    ), url(../../../../Images/gHome.jpg);
+    
+    
+}
+ 
+.trending-banner .row-2{
+    position: absolute;
+    bottom: 40%;
+}
+
+.trending-banner button{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: .5rem 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+}

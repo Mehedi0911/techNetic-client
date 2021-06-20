@@ -1,0 +1,61 @@
+.qty{
+    margin-right: 1.5rem;
+}
+.add-btn{
+background: none;
+border: none;
+font-size: 1.5rem;
+}
+
+.add-btn:hover{
+    color: var(--primary);
+}
+.minus-btn{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.minus-btn:hover{
+    color: var(--primary);
+}
+
+.m-cart-btn{
+background: none;
+border: 2px solid var(--primary);
+padding: .5rem 1.5rem;
+margin-right: 1rem;
+color: var(--primary);
+transition: all ease .4s;
+}
+
+.m-wishlist-btn{
+    background: none;
+    border: 2px solid var(--danger);
+    padding: .5rem 1.5rem;
+    color: var(--danger);
+    transition: all ease .4s;
+}
+
+
+.m-wishlist-btn:hover{
+    color: var(--pure);
+    background: var(--danger);
+}
+
+.m-cart-btn:hover{
+    color: var(--pure);
+    background: var(--primary);
+}
+
+span{
+    margin-left: 1.5rem;
+}
+
+.tags{
+    background: var(--secondary);
+    width: fit-content;
+    padding: .25rem 1rem;
+    border-radius: 10px;
+    color: var(--pure);
+}

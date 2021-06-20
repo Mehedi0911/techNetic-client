@@ -1,17 +1,17 @@
 .header-card{
-    height: auto;
-    /* min-height: 135.5px; */
+    
+    margin-bottom: 1rem;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    text-align: justify;
+    
     
 }
 
-.card-content{
+/* .card-content{
     width: 250px;
     
-}
+} */
 
 .card-content button{
     margin-left: -6px;
