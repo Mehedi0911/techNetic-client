@@ -3,8 +3,21 @@ import HeaderCards from './HeaderCards/HeaderCards';
 import HeaderSlider from './HeaderSlider/HeaderSlider';
 
 const Header = () => {
+
+    const test = ({text}) => {
+
+        console.log(text);
+        
+
+    }
+
+    test('hello')
+
+   
+
     return (
         <div className="mt-4">
+            
             <div className="container">
                 <div className="row">
                     <div className="col-md-8">

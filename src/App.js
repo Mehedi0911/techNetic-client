@@ -19,6 +19,7 @@ import PaymentForm from "./components/Checkout/Checkout/PaymentForm";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import OrderConfirmationDialog from "./components/Checkout/Checkout/OrderConfirmationDialog";
+import Login from "./components/Privates/Login/Login";
 function App() {
 
   const stripePromise = loadStripe('pk_test_51IqLETGPs5ZHTEdtPP6dyGKds02FbAUD7P8mbZvho3Q88mMmVM5URHNTbHgqqsNzHaLf6dWYgTiCYmTBkXVPh3hV00kNCrB0X5');
@@ -32,6 +33,7 @@ function App() {
         <Route path="/cart" component={Cart}/>
         <Route path="/checkout" component={Checkout}/>
         <Route path="/orderPlaced" component={OrderConfirmationDialog}/>
+        <Route path="/login" component={Login}/>
         <Route path='/payment'>
         <Elements stripe={stripePromise}>
           
@@ -43,6 +45,8 @@ function App() {
       <Footer></Footer>
     </Router>
   );
+
+  
 }
 
 export default App;
